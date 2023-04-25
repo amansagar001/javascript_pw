@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Double click</title>
+    <style>
+      #container {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        gap: 100px;
+      }
+
+      button {
+        padding: 15px 10px;
+        border: 4px solid black;
+        border-radius: 20px;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>double click event listener</h1>
+      <button id="btn" ondblclick="log()">LOGIN</button>
+    </div>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde pariatur et
+      quo? Culpa pariatur necessitatibus explicabo quasi est, id sequi atque
+      temporibus nulla in voluptatum quas nostrum deleniti suscipit autem non
+      beatae porro soluta eius officiis rem corporis? Quas a enim sunt explicabo
+      architecto temporibus sequi eum ipsa nulla. Repellat deselitia qui dolorum
+      quos quisquam? Officia explicabo sapiente, voluptates deserunt mollitia
+      odio eveniet unde omnis. Asperiores perferendis atque quo, nemo illo iusto
+      accusamus consectetur odio perspiciatis assumenda tenetur cupiditate, nisi
+      eum! Vero quam suscipit ipsum, hic animi eligendi deserunt dolorum est
+      odio, dolorem nobis quibusdam debitis id repudiandae eum labore facere,
+      nisi reiciendis dolor ea perspiciatis error? Dolor, fugit!
+    </p>
+
+    <script>
+      //click event listener
+      //sir i want to hide para when the screen is logout but my code is not working.
+
+      /*  let para = document.getElementById("para");
+      para.addEventListener("click", run);
+      function run() {
+        if (document.body.backgroundColor != "#945656") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        } .....    NOT WORKING 
+      }*/
+      //
+      function log() {
+        if (document.getElementById("btn").innerText != "logout") {
+          let aman = (document.getElementById("btn").innerText = "logout");
+          document.getElementById("btn").style.backgroundColor = "grey";
+          document.getElementById("btn").style.color = "red";
+          document.body.style.backgroundColor = "#945656";
+        } else {
+          let aman = (document.getElementById("btn").innerText = "login ");
+          document.getElementById("btn").style.backgroundColor = "yellow";
+          document.getElementById("btn").style.color = "green";
+          document.body.style.backgroundColor = "pink";
+        }
+      }
+    </script>
+  </body>
+</html>
