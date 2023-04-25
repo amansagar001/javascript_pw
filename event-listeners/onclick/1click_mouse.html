@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #para {
+        border: 3px dotted blue;
+        cursor: pointer;
+      }
+      button {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: #605f5f;
+        font-size: 20px;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+    </style>
+    <title>onclick/mouseover</title>
+  </head>
+  <body>
+    <div>
+      <h1>On Click Event Listener</h1>
+      <h3 id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum pariatur
+        animi suscipit. Doloremque illo eos praesentium quis non, exercitationem
+        nihil numquam dignissimos harum, distinctio ipsam commodi expedita animi
+        culpa est fugit sapiente perferendis? Reiciendis nisi in, consectetur
+        corrupti vel omnis sequi, id iusto voluptatibus recusandae itaque ipsum
+        eveniet. Aliquam, quod?Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Laudantium unde assumenda nam accusamus voluptate et
+        saepe iusto, architecto optio nostrum illo, pariatur inventore fugiat
+        alias possimus labore expedita officiis culpa, praesentium natus qui.
+        Mollitia, molestias sint laudantium hic odit incidunt aspernatur,
+        doloribus tempora aliquam autem vero iusto, quibusdam delectus.
+        Exercitationem voluptatum rerum similique neque facilis, officia
+        laudantium vitae necessitatibus labore.
+      </h3>
+
+      <button id="btn" onclick="togglehide()">Show/Hide</button>
+      <!-- on click event listener  -->
+
+      <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover", function run() {
+          if (document.body.style.backgroundColor != "red") {
+            alert("mouse inside the para ");
+            document.body.style.backgroundColor = "red";
+          } else {
+            alert("mouse outside the para ");
+            document.body.style.backgroundColor = "green";
+          }
+
+          /*mouse over event listener*/
+        });
+
+        function togglehide() {
+          let btn = document.getElementById("btn");
+          let para = document.getElementById("para");
+          if (para.style.display != "none") {
+            para.style.display = "none";
+          } else {
+            para.style.display = "block";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

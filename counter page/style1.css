@@ -1,0 +1,40 @@
+body {
+  background-image: url(https://cdn.w600.comps.canstockphoto.com/ticker-counter-eps-vector_csp3176074.jpg);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin: 200px;
+  background-image: url(https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/lemon-health-benefits-1296x728-feature.jpg?w=1155&h=1528);
+  background-repeat: no-repeat;
+}
+#counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #c8e8f1;
+  border: 2px dotted rgb(6, 77, 100);
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #c5d7a1;
+}
+
+#count {
+  font-size: xx-large;
+  font-weight: 900;
+  color: #3c1ac1;
+}
+
+#head {
+  font-size: 56px;
+  color: rgb(142, 13, 73);
+  font-weight: 900;
+  text-decoration: underline;
+}
